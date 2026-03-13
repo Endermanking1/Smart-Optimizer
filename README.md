@@ -1,4 +1,7 @@
-# Smart Optimizer - Dynamic Server Optimization Plugin
+
+<img width="2048" height="220" alt="minecraft_title" src="https://github.com/user-attachments/assets/025a481f-6a64-44bf-8e5d-d3c820faa0c7" />
+
+
 
 A Bukkit/Paper plugin that dynamically optimizes your Minecraft server based on real-time RAM and TPS usage.
 
