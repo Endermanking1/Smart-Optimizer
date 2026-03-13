@@ -84,7 +84,7 @@ optimization:
 
 ## Requirements
 
-- Minecraft 1.19+ (Paper/Spigot)
+- Minecraft 1.19+ (Paper/Spigot/Purpur/Bukkit)
 - Java 17+
 - No additional dependencies
 
