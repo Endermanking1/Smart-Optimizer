@@ -1,0 +1,21 @@
+name: Smart Optimizer
+version: 1.0.0
+main: com.ecostream.EcoStream
+api-version: 1.19
+author: Endermanking1
+description: Dynamically optimizes server performance based on RAM and TPS usage
+website: https://github.com/Endermanking1/Smart-Optimizer
+
+commands:
+  smartoptimizer:
+    description: Smart Optimizer management commands
+    usage: /<command> [reload|status]
+    permission: smartoptimizer.admin
+
+permissions:
+  smartoptimizer.admin:
+    description: Allows access to Smart Optimizer admin commands
+    default: op
+
+depend: []
+softdepend: []

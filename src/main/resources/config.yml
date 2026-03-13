@@ -1,0 +1,30 @@
+# Smart Optimizer Configuration File
+# Dynamically optimizes server performance based on RAM and TPS usage
+
+# Performance thresholds
+thresholds:
+  ram:
+    moderate: 80.0  # Percentage of RAM usage to trigger moderate optimization
+    critical: 92.0  # Percentage of RAM usage to trigger critical optimization
+  tps:
+    moderate: 18.0  # TPS threshold to trigger moderate optimization
+    critical: 15.0  # TPS threshold to trigger critical optimization
+
+# Distance settings
+distances:
+  view:
+    min: 4   # Minimum allowed view distance
+    max: 16  # Maximum allowed view distance
+  simulation:
+    min: 4   # Minimum allowed simulation distance
+    max: 12  # Maximum allowed simulation distance
+
+# Optimization settings
+optimization:
+  check_interval_ticks: 200        # How often to check server health (200 ticks = 10 seconds)
+  chunk_unload_delay_minutes: 5   # Unload chunks in dimensions without players for this many minutes
+  ground_item_clear_minutes: 2    # Clear ground items older than this many minutes in critical mode
+
+# Debug settings
+settings:
+  debug: false  # Enable debug logging
