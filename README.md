@@ -35,6 +35,11 @@ A Bukkit/Paper plugin that dynamically optimizes your Minecraft server based on 
 - World feels "full" to players even during optimization
 - Only hard-clears items in Level 3 critical mode
 
+### Smart Unloading
+- Automatically unloads chunks in dimensions without players for 5+ minutes
+- Preserves spawn chunks and chunks with entities
+- Tracks player presence per dimension
+
 ## Configuration
 
 All settings are customizable via `config.yml`:
@@ -42,27 +47,27 @@ All settings are customizable via `config.yml`:
 ```yaml
 # Performance thresholds
 thresholds:
-  ram:
-    moderate: 80.0
-    critical: 92.0
-  tps:
-    moderate: 18.0
-    critical: 15.0
+  ram:
+    moderate: 80.0
+    critical: 92.0
+  tps:
+    moderate: 18.0
+    critical: 15.0
 
 # Distance settings
 distances:
-  view:
-    min: 4
-    max: 16
-  simulation:
-    min: 4
-    max: 12
+  view:
+    min: 4
+    max: 16
+  simulation:
+    min: 4
+    max: 12
 
 # Optimization settings
 optimization:
-  check_interval_ticks: 200        # 10 seconds
-  chunk_unload_delay_minutes: 5
-  ground_item_clear_minutes: 2
+  check_interval_ticks: 200        # 10 seconds
+  chunk_unload_delay_minutes: 5
+  ground_item_clear_minutes: 2
 ```
 
 ## Commands
